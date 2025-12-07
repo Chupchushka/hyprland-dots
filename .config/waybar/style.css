@@ -85,7 +85,7 @@ window#waybar {
   background: @black;
   color: @text;
   padding: 0;
-  margin: 4px 0 4px 0;
+  margin: 4px 10 4px 0px;
   border-bottom: solid 2px @text;
   border-radius: 0;
 }
