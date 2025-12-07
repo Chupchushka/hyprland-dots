@@ -1,0 +1,71 @@
+{
+	"position": "top",
+	"height": 27,
+	"width": 900,
+	"spacing": 0,
+	"margin-bottom": 5,
+
+    "modules-left": ["cpu", "memory"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["tray", "pulseaudio", "hyprland/language", "clock"],
+
+"cpu": {
+    "interval": 10,
+    "format": "{}% ",
+    "max-length": 10
+},
+
+  "memory": {
+    "interval": 30,
+    "format": "{}% ",
+    "max-length": 10
+},
+
+	"custom/kitty": {
+		"format": "",
+		"on-click": "exec kitty",
+		"tooltip": false
+	},
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "sort-by-number": true,
+    "persistent-workspaces": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6"
+    }
+  },
+
+    "tray": {
+		"icon-size": 14,
+		"spacing": 15
+    },
+
+    "pulseaudio": {
+		"scroll-step": 5,
+		"format": "{icon}{volume}%",
+		"format-icons": {
+			"default": [" ", " ", " "]
+		},
+		"on-click": "pavucontrol"
+	},
+
+	"hyprland/language": {
+		"format": "{}",
+		"format-en": "EN",
+		"format-ru": "RU",
+	},
+    
+	"clock": {
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format-alt": "{:%Y-%m-%d}"
+	},
+
+	"escape": true,
+	"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+	}
+}
