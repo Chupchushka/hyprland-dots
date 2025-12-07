@@ -73,10 +73,9 @@
     "icon-size": 14,
     "spacing": 17,
   },
-},
-
-	"hyprland/language": {
+  "hyprland/language": {
 		"format": "{}",
 		"format-en": "EN",
 		"format-ru": "RU",
-	},
+  },
+},
