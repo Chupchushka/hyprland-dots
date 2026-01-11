@@ -40,13 +40,13 @@ cd hyprland-dots
 
 ### 3. Use Stow to Manage Dotfiles
 
-Use GNU Stow to symlink the configuration files to your system directories. For example, to configure Neovim:
+Use GNU Stow to symlink the configuration files to your system directories.
 ```bash
 stow .
 ```
 
 > [!WARNING]
-> Don't forget to backup the .config directory or remove it beacuse ot may cause spme issues with stow
+> Don't forget to backup the .config directory or remove it beacuse it may cause some issues when creating symlinks with stow
 
 ### 4. Restart Your Hyprland Desktop
 
@@ -61,15 +61,15 @@ For the changes to take effect, restart your Hyprland session or your
 
 The repository contains configuration files for the following applications, located under the `.config` directory:
 
-1. **Fastfetch** - As a fetch
-2. **Fish** - Shell.
-3. **Hyprland** - Wayland compositor.
-4. **Kitty** - terminal emulator.
-5. **Neovim** - text editor.
-6. **Rofi** - Launcher.
-7. **Starship** - A cross-shell prompt.
-8. **Waybar** - Top bar.
-9. **Yazi** - file manager.
+1. **Fastfetch** - System fetch
+2. **Fish** - Shell
+3. **Hyprland** - Wayland compositor
+4. **Kitty** - Terminal emulator
+5. **Neovim** - Text editor
+6. **Rofi** - Launcher
+7. **Starship** - Shell prompt
+8. **Waybar** - Top bar
+9. **Yazi** - File manager
 
 ### Install All Apps
 
