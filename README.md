@@ -42,19 +42,18 @@ cd hyprland-dots
 
 Use GNU Stow to symlink the configuration files to your system directories. For example, to configure Neovim:
 ```bash
-stow nvim
+stow .
 ```
 
-Repeat the same for other applications. For example:
-```bash
-stow hypr
-stow kitty
-stow waybar
-```
+> [!WARNING]
+> Don't forget to backup the .config directory or remove it beacuse ot may cause spme issues with stow
 
 ### 4. Restart Your Hyprland Desktop
 
-For the changes to take effect, restart your Hyprland session or your computer.
+For the changes to take effect, restart your Hyprland session or your 
+> [!NOTE]
+> Replace settings in .config/hypr/wm/monitors.conf with those one that are suitable for your monitor
+
 
 ---
 
@@ -62,27 +61,22 @@ For the changes to take effect, restart your Hyprland session or your computer.
 
 The repository contains configuration files for the following applications, located under the `.config` directory:
 
-1. **Fastfetch** - Quick and customizable system information renderer.
-2. **Fish** - Friendly Interactive Shell.
-3. **Hyprland** - A tiling Wayland compositor.
-4. **Kitty** - A fast, feature-rich terminal emulator.
-5. **Neovim** - A lightweight, but powerful text/code editor.
-6. **Rofi** - Launcher and window switcher.
+1. **Fastfetch** - As a fetch
+2. **Fish** - Shell.
+3. **Hyprland** - Wayland compositor.
+4. **Kitty** - terminal emulator.
+5. **Neovim** - text editor.
+6. **Rofi** - Launcher.
 7. **Starship** - A cross-shell prompt.
-8. **Waybar** - A highly customizable bar for Wayland.
-9. **Yazi** - A simple and fast terminal file manager.
+8. **Waybar** - Top bar.
+9. **Yazi** - file manager.
 
 ### Install All Apps
 
 Install the necessary software packages with the command:
 ```bash
-sudo pacman -S fastfetch fish hyprland kitty neovim rofi starship waybar
-yay -S yazi
+sudo pacman -S fastfetch fish hyprland kitty neovim rofi starship waybar yazi
 ```
-
-*Note*: Use `yay` to install `Yazi` from the AUR. If you don’t have `yay`, install it first.
-
----
 
 ## Additional Notes
 
@@ -90,8 +84,3 @@ yay -S yazi
   ```bash
   cp -r ~/.config ~/.config_backup
   ```
-- Each subdirectory under `.config` corresponds to an application and contains customized settings.
-
----
-
-Feel free to explore the repository further, and enjoy your beautifully configured Arch Linux desktop environment! 🚀
